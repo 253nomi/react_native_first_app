@@ -1,16 +1,16 @@
 // import { StatusBar } from 'expo-status-bar';
 import {
-  Alert, // To Show Alert
+  Alert, // To Show Alert Component
   StyleSheet, // To Create Design Guidelines
-  Text, // For Text
-  View,
-  Image, // To Render Image
-  Button, // To Create Button
+  Text, // For Text Component
+  View, // To Create a wrapper around other components
+  Image, // To Render Image Component
+  Button, // To Create Button Component
   TouchableOpacity, // To Create Tap with Effect
   Pressable, // To Create Tap without Effect
   ScrollView, // To Make Screen Scrollable
   Platform, // To Check Platform i.e "android" or "ios",
-  ActivityIndicator, // To Crate a Loader
+  ActivityIndicator, // To Crate a Loader Component
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
@@ -61,6 +61,9 @@ export default function App() {
             This is {Platform.OS == "android" ? "Android" : "IOS"} Device
           </Text>
           <ActivityIndicator size={"large"} color={"red"} />
+          <View style = {styles.view1}>
+            
+            </View>
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
@@ -88,5 +91,10 @@ const styles = StyleSheet.create({
     height: 200,
     width: 200,
     borderRadius: 100,
+  },
+  view1: {
+    height: 200,
+    width: 200,
+    backgroundColor: "red",
   },
 });
