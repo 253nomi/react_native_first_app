@@ -9,7 +9,8 @@ import {
   TouchableOpacity, // To Create Tap with Effect
   Pressable, // To Create Tap without Effect
   ScrollView, // To Make Screen Scrollable
-  Platform, // To Check Platform i.e "android" or "ios"
+  Platform, // To Check Platform i.e "android" or "ios",
+  ActivityIndicator, // To Crate a Loader
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
@@ -59,6 +60,7 @@ export default function App() {
           <Text>
             This is {Platform.OS == "android" ? "Android" : "IOS"} Device
           </Text>
+          <ActivityIndicator size={"large"} color={"red"} />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
