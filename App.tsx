@@ -61,7 +61,7 @@ export default function App() {
             This is {Platform.OS == "android" ? "Android" : "IOS"} Device
           </Text>
           <ActivityIndicator size={"large"} color={"red"} />
-          <View style={[styles.view1, { flexDirection: "row" }]}>
+          <View style={[styles.view1, { flexDirection: "row",  justifyContent: "space-between", }]}>
             <Text>Text1</Text>
             <Text>Text2</Text>
             <Text>Text3</Text>
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
   view1: {
-   // height: 200,
+    height: 200,
     width: 200,
     backgroundColor: "red",
   },
