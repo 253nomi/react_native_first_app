@@ -7,6 +7,7 @@ import InteractiveDemo from "./components/InteractiveDemo";
 import PlatformDemo from "./components/PlatformDemo";
 import ResponsiveDemo from "./components/ResponsiveDemo";
 import HookStateDemo from "./components/HookStateDemo";
+import ModalDemo from "./components/ModalDemo";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <FlexboxDemo />
           <ResponsiveDemo />
           <HookStateDemo />
+          <ModalDemo />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
