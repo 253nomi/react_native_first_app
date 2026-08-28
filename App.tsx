@@ -10,12 +10,19 @@ import {
   Pressable, // To Create Tap without Effect
   ScrollView, // To Make Screen Scrollable
   Platform, // To Check Platform i.e "android" or "ios",
-  ActivityIndicator, // To Crate a Loader Component
+  ActivityIndicator,
+  Dimensions, // To Crate a Loader Component
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   const onButtonPress = () => Alert.alert("Button Pressed");
+  console.log(Dimensions.get("screen"));
+
+  // Techniques for Responsiveness
+  // 1.Percentage
+  // 2.Dimensions
+  // 3.Libraries
 
   return (
     <SafeAreaProvider>
@@ -82,7 +89,7 @@ export default function App() {
             <View style={styles.childView2}> </View>
             <Text>Text3</Text>
           </View>
-          <View style={{ height: 400,  }}>
+          {/* <View style={{ height: 400 }}>
             <View
               style={{
                 backgroundColor: "red",
@@ -101,7 +108,14 @@ export default function App() {
                 flex: 1,
               }}
             />
-          </View>
+          </View> */}
+          <View
+            style={{
+              backgroundColor: "tomato",
+              height: "50%",
+              width: "100%",
+            }}
+          ></View>
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
