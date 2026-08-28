@@ -19,6 +19,9 @@ export default function App() {
   const onButtonPress = () => Alert.alert("Button Pressed");
   console.log(Dimensions.get("screen"));
 
+  const phoneHeight = Dimensions.get("screen").height;
+  const phoneWidth = Dimensions.get("screen").width;
+
   // Techniques for Responsiveness
   // 1.Percentage
   // 2.Dimensions
@@ -86,7 +89,7 @@ export default function App() {
           >
             <Text>Text1</Text>
             <Text>Text2</Text>
-            <View style={styles.childView2}> </View>
+            <View style={styles.childView2}></View>
             <Text>Text3</Text>
           </View>
           {/* <View style={{ height: 400 }}>
