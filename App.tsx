@@ -14,6 +14,7 @@ import {
   Dimensions, // To Crate a Loader Component
 } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import { scale, verticalScale, s, vs } from "react-native-size-matters";
 
 export default function App() {
   const onButtonPress = () => Alert.alert("Button Pressed");
@@ -112,11 +113,25 @@ export default function App() {
               }}
             />
           </View> */}
-          <View
+          {/* <View
             style={{
               backgroundColor: "tomato",
               height: "50%",
               width: "100%",
+            }}
+          ></View> */}
+          <View
+            style={{
+              backgroundColor: "red",
+              height: verticalScale(300),
+              width: scale(300),
+            }}
+          ></View>
+          <View
+            style={{
+              backgroundColor: "orange",
+              height: vs(300),
+              width: s(300),
             }}
           ></View>
         </ScrollView>
