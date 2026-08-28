@@ -8,6 +8,7 @@ import PlatformDemo from "./components/PlatformDemo";
 import ResponsiveDemo from "./components/ResponsiveDemo";
 import HookStateDemo from "./components/HookStateDemo";
 import ModalDemo from "./components/ModalDemo";
+import BackgroundImageDemo from "./components/BackgroundImageDemo";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <ResponsiveDemo />
           <HookStateDemo />
           <ModalDemo />
+          <BackgroundImageDemo />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>

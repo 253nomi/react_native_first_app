@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { View, Text, Button, Modal } from "react-native";
+import Fontisto from "@expo/vector-icons/Fontisto";
 
 export default function ModalDemo() {
   const [visible, setVisible] = useState(false);
@@ -15,6 +16,12 @@ export default function ModalDemo() {
           </Text>
 
           <Button title="Close" onPress={() => setVisible(false)} />
+          <Fontisto
+            name="close"
+            size={50}
+            color="red"
+            onPress={() => setVisible(false)}
+          />
         </View>
       </Modal>
     </View>
