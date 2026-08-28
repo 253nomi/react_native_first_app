@@ -1,4 +1,3 @@
-import React from "react";
 import { Alert, StyleSheet, Text } from "react-native";
 
 export default function HelloWorldText() {

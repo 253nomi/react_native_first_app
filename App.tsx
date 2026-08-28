@@ -6,6 +6,7 @@ import HelloWorldText from "./components/HelloWorldText";
 import InteractiveDemo from "./components/InteractiveDemo";
 import PlatformDemo from "./components/PlatformDemo";
 import ResponsiveDemo from "./components/ResponsiveDemo";
+import HookStateDemo from "./components/HookStateDemo";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <PlatformDemo />
           <FlexboxDemo />
           <ResponsiveDemo />
+          <HookStateDemo />
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>

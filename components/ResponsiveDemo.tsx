@@ -1,4 +1,3 @@
-import React from "react";
 import { View } from "react-native";
 import { scale, s, verticalScale, vs } from "react-native-size-matters";
 
