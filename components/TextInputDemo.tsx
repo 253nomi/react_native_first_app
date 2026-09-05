@@ -19,7 +19,7 @@ export default function TextInputDemo() {
           borderRadius: 4,
           paddingHorizontal: 10,
         }}
-        secureTextEntry={true}
+        // secureTextEntry={true}
       />
     </View>
   );
